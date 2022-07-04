@@ -7,6 +7,7 @@
   "dependencies": {
     "axios": "0.27.2",
     "carousel": "0.0.3",
+    "media-query": "1.0.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-responsive": "9.0.0-beta.10",

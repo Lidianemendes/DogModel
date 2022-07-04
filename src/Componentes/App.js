@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Header from "./Header.js";
-import background from "/src/imagens/fundo dog.jpg";
-import "/src/styles/App.css";
+import background from "./imagens/fundo dog.jpg";
+import Model from "./imagens/dog model.jpg";
+import "./styles/App.css";
 import Text from "./text.js";
+import Footer from "./Footer.js";
 
 export default function API() {
   const [dog, setDog] = useState([]);
@@ -20,6 +22,9 @@ export default function API() {
     <div style={{ backgroundImage: `url(${background})` }}>
       <Header />
       <Text />
+      <section className="model">
+        <img src={Model} alt="" />
+      </section>
       <button
         onClick={() => {
           DogList();
@@ -28,6 +33,7 @@ export default function API() {
         MODELOS
       </button>
       <>{imagemAparecendo && <img src={dog} alt="imagens de doguinhos" />}</>
+      <Footer />
     </div>
   );
 }
