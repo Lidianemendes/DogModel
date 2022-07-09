@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
   background-color: pink;
   color: rgb(216, 21, 69);
-  margin: 0;
-  padding: 0;
   font-family: "Roboto", sans-serif;
   width: 100%;
 }
@@ -41,4 +41,23 @@ img {
   margin-top: 20px;
   margin-left: 480px;
   margin-bottom: 10px;
+}
+@media (max-width: 700px) {
+  body {
+    background-color: #6d6875;
+  }
+  p {
+    color: #001219;
+    margin: 9px;
+  }
+  button {
+    margin-left: 310px;
+    background-color: #b5179e;
+  }
+  .model img {
+    margin-left: 190px;
+  }
+  img {
+    margin-left: 190px;
+  }
 }

@@ -2,11 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  width: 100%;
 }
 .star {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: rgb(29, 9, 17);
   font-size: 1.1em;
   height: 15vh;
@@ -28,4 +28,23 @@ li {
   overflow-x: hidden;
   cursor: pointer;
   color: burlywood;
+}
+@media (max-width: 700px) {
+  .star {
+    background-color: #5f0f40;
+    width: 100%;
+    height: 18vh;
+  }
+  h1 {
+    color: #eae2b7;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 30px;
+  }
+  li {
+    color: #eae2b7;
+  }
 }
